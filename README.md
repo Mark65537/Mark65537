@@ -47,3 +47,20 @@
 ## Мой статус
 
 <img src="https://komarev.com/ghpvc/?username=mark65537&label=Views&color=blue&style=plastic" alt="iampawan" /> 
+
+<table border="0">
+  
+  <tr>
+     <td colspan="2" align="center">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mark65537&theme=github_dark"/>
+    </td>
+  </tr>
+  <tr>
+      <td align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mark65537&theme=github_dark"/>
+    </td>
+      <td align = "center">      
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mark65537&theme=github_dark"/>
+    </td> 
+  </tr>
+</table>
