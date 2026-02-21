@@ -4,6 +4,9 @@
 
 здесь перечислено все технологии и инструменты с которыми я когда либо работал
 
+> NOTE
+> При нажатии на бейджик будут показаны связанные репозитории
+
 ### 📋 Языки программирования
 
 [![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=c)
