@@ -29,7 +29,12 @@
 ### 📚 Фреймворки, платформы, библиотеки
 
 [![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:dotnet&type=repositories)
+[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:dotnet-framework&type=repositories)
+[![ASP.NET](https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=asp.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:asp-net&type=repositories)
 [![Blazor](https://img.shields.io/badge/blazor-%235C2D91.svg?style=for-the-badge&logo=blazor&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:blazor&type=repositories)
+[![Entity Framework](https://img.shields.io/badge/Entity%20Framework-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:entity-framework&type=repositories)
+[![Gulp](https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:gulp&type=repositories)
+[![Newtonsoft.Json](https://img.shields.io/badge/Newtonsoft.Json-121011?style=for-the-badge&logo=json&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:newtonsoft-json&type=repositories)
 [![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:django&type=repositories)
 [![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:laravel&type=repositories)
 [![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:jquery&type=repositories)
@@ -41,8 +46,7 @@
 [![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:sass&type=repositories)
 [![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:spring&type=repositories)
 [![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)](https://github.com/search?q=user:Mark65537+topic:vuejs&type=repositories)
-[![Angular](https://img.shields.io/badge/angular-%23007ACC.svg?style=for-the-badge&logo=angular&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:angular&type=repositories)
-[![ASP.NET](https://img.shields.io/badge/asp.net%20core-19b87c?style=for-the-badge&logo=asp.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:asp-net&type=repositories)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:angular&type=repositories)
 
 ### ☁️ Хостинг/SaaS
 
