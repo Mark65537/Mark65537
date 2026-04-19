@@ -38,9 +38,11 @@
 [![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:opencv&type=repositories)
 [![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=for-the-badge&logo=opengl)](https://github.com/search?q=user:Mark65537+topic:opengl&type=repositories)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/search?q=user:Mark65537+topic:react&type=repositories)
-[![SAAS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:sass&type=repositories)
+[![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:sass&type=repositories)
 [![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:spring&type=repositories)
 [![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)](https://github.com/search?q=user:Mark65537+topic:vuejs&type=repositories)
+[![Angular](https://img.shields.io/badge/angular-%23007ACC.svg?style=for-the-badge&logo=angular&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:angular&type=repositories)
+[![ASP.NET](https://img.shields.io/badge/asp.net%20core-19b87c?style=for-the-badge&logo=asp.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:asp-net&type=repositories)
 
 ### ☁️ Хостинг/SaaS
 
