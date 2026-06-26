@@ -1,13 +1,17 @@
-## Обо мне..! :yum:
+# Обо мне..! :yum:
 
-## 🧠 Технический стек и инструменты разработки
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD045 -->
 
-здесь перечислено все технологии и инструменты с которыми я когда либо работал
+<details open>
+<summary><h2>🧠 Технический стек и инструменты разработки</h2></summary>
 
-> NOTE
+здесь перечислено все технологии и инструменты с которыми я когда-либо работал
+
 > При нажатии на бейджик будут показаны связанные репозитории
 
-### 📋 Языки программирования
+<details open>
+<summary><h3>📋 Языки программирования</h3></summary>
 
 [![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=c)
 [![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=c%23)
@@ -25,12 +29,18 @@
 [![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=ruby)
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=typescript)
 
-### 🌐 Веб-технологии
+</details>
+
+<details open>
+<summary><h3>🌐 Веб-технологии</h3></summary>
 
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=html)
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=css)
 
-### 📚 Фреймворки, платформы, библиотеки
+</details>
+
+<details open>
+<summary><h3>📚 Фреймворки, платформы, библиотеки</h3></summary>
 
 [![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:dotnet&type=repositories)
 [![.NET Framework](https://img.shields.io/badge/.NET%20Framework-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:dotnet-framework&type=repositories)
@@ -59,32 +69,52 @@
 [![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:docker&type=repositories)
 [![Docker Compose](https://img.shields.io/badge/Docker%20Compose-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:docker-compose&type=repositories)
 
-### 💾 Базы данных
+</details>
+
+<details open>
+<summary><h3>💾 Базы данных</h3></summary>
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=postgresql)
 [![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=sqlite)
 [![TSQL](https://img.shields.io/badge/TSQL-%23CC2927.svg?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](https://github.com/Mark65537?tab=repositories&language=tsql)
 
-### ☁️ Хостинг/SaaS
+</details>
+
+<details open>
+<summary><h3>☁️ Хостинг/SaaS</h3></summary>
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://docs.github.com/en/pages)
 
-### 🕓 Контроль версий
+</details>
+
+<details open>
+<summary><h3>🕓 Контроль версий</h3></summary>
 
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://github.com/git-guides)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 [![GitFlic](https://img.shields.io/badge/Gitflick-50e3a4.svg?style=for-the-badge&logo=gitflick&logoColor=white)](https://gitflic.com/)
 
-### 🚀 CI/CD
+</details>
+
+<details open>
+<summary><h3>🚀 CI/CD</h3></summary>
 
 [![Github Actions](https://img.shields.io/badge/github%20actions-%232671F5.svg?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:github-actions&type=repositories)
 
-### 🎨 Редакторы кода
+</details>
+
+<details open>
+<summary><h3>🎨 Редакторы кода</h3></summary>
 
 [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078D7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:visual-studio-code&type=repositories)
 [![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:visual-studio&type=repositories)
 
-## Мои навыки
+</details>
+
+</details>
+
+<details open>
+<summary><h2>Мои навыки</h2></summary>
 
 - Умение работать с технической документацией и разрабатывать архитектуру решений.
 - Способность разбираться в чужом коде, поддерживать и развивать существующие проекты;
@@ -99,9 +129,12 @@
 - Умение тестировать приложение;
 - Нацелен на результат и ценю работу в команде
 
-## Мой статус
+</details>
 
-<img src="https://komarev.com/ghpvc/?username=mark65537&label=Views&color=blue&style=plastic" alt="iampawan" /> 
+<details open>
+<summary><h2>Мой статус</h2></summary>
+
+<img src="https://komarev.com/ghpvc/?username=mark65537&label=Views&color=blue&style=plastic" alt="iampawan" />
 
 <table border="0">
   
@@ -114,8 +147,10 @@
       <td align="center">
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mark65537&theme=github_dark"/>
     </td>
-      <td align = "center">      
+      <td align = "center">
       <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mark65537&theme=github_dark"/>
-    </td> 
+    </td>
   </tr>
 </table>
+
+</details>
