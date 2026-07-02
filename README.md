@@ -117,6 +117,9 @@
 <details open>
 <summary><h2>🌍 Иностранные языки</h2></summary>
 
+🔥 Current streak: **197 days**
+
+Total XP: **18706**
 - 🇯🇵 **Japanese**
   - XP: **9723**
   - CEFR: **C1**
@@ -137,15 +140,15 @@
   - CEFR: **A2**
   - Progress: █░░░░░░░░░ (13%)
 
-- 🇷🇺 **Russian**
+- 🌐 **ru**
   - XP: **200**
   - CEFR: **A1**
-  - Progress: █░░░░░░░░░ (10%)
+  - Progress: █░░░░░░░░░░ (7%)
 
-- 🇺🇸 **English**
+- 🌐 **en**
   - XP: **148**
   - CEFR: **A1**
-  - Progress: █░░░░░░░░░░ (1%)
+  - Progress: █░░░░░░░░░░ (5%)
 
 - 🇰🇷 **Korean**
   - XP: **126**
@@ -157,7 +160,6 @@
   - CEFR: **A1**
   - Progress: █░░░░░░░░░░ (2%)
 
-🔥 Current streak: **197 days**
 
 </details>
 <!-- DUOLINGO_END -->
