@@ -120,22 +120,22 @@
 🔥 Current streak: **197 days**
 
 Total XP: **18706**
-- 🇯🇵 **Japanese**
+- <img src=https://flagcdn.com/w40/jp.png width=24/> **Japanese**
   - XP: **9723**
   - CEFR: **C1**
   - Progress: █████████░ (97%)
 
-- 🇨🇳 **Chinese**
+- <img src=https://flagcdn.com/w40/cn.png width=24/> **Chinese**
   - XP: **5333**
   - CEFR: **B2**
   - Progress: █████░░░░░ (53%)
 
-- 🇩🇪 **German**
+- <img src=https://flagcdn.com/w40/de.png width=24/> **German**
   - XP: **2500**
   - CEFR: **B1**
   - Progress: █████░░░░░ (50%)
 
-- 🇫🇷 **French**
+- <img src=https://flagcdn.com/w40/fr.png width=24/> **French**
   - XP: **626**
   - CEFR: **A2**
   - Progress: █░░░░░░░░░ (13%)
@@ -145,17 +145,17 @@ Total XP: **18706**
   - CEFR: **A1**
   - Progress: █░░░░░░░░░░ (7%)
 
-- 🌐 **en**
+- <img src=https://flagcdn.com/w40/gb.png width=24/> **English**
   - XP: **148**
   - CEFR: **A1**
-  - Progress: █░░░░░░░░░░ (5%)
+  - Progress: █░░░░░░░░░░ (1%)
 
-- 🇰🇷 **Korean**
+- <img src=https://flagcdn.com/w40/kr.png width=24/> **Korean**
   - XP: **126**
   - CEFR: **A1**
   - Progress: █░░░░░░░░░░ (3%)
 
-- 🇮🇩 **Indonesian**
+- <img src=https://flagcdn.com/w40/id.png width=24/> **Indonesian**
   - XP: **50**
   - CEFR: **A1**
   - Progress: █░░░░░░░░░░ (2%)
