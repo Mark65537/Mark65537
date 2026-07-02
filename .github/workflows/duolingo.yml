@@ -31,59 +31,70 @@ jobs:
 
           JSON=$(curl -s https://duojson.com/Marksics/profile.json)
 
-          STREAK=$(echo "$JSON" | jq -r '.streak // 0')
+          STREAK=$(echo "$JSON" | jq -r '.currentStreak // 0')
 
-          TMP="duo_block.md"
+          OUT="duo.md"
 
-          echo "<details open>" > $TMP
-          echo "<summary><h2>🌍 Иностранные языки</h2></summary>" >> $TMP
-          echo "" >> $TMP
+          echo "<details open>" > $OUT
+          echo "<summary><h2>🌍 Иностранные языки</h2></summary>" >> $OUT
+          echo "" >> $OUT
 
+          # ---- агрегируем XP по языку ----
           echo "$JSON" \
-          | jq -c '.courses[]' \
-          | jq -s 'sort_by(-.xp)' \
-          | jq -c '.[]' \
-          | while read -r course; do
+          | jq -r '
+              .languages
+              | group_by(.learningLanguage)
+              | map({
+                  lang: .[0].learningLanguage,
+                  xp: (map(.xp) | add)
+                })
+              | sort_by(-.xp)
+              | .[]
+              | "\(.lang) \(.xp)"
+          ' | while read LANG XP; do
 
-              CODE=$(echo "$course" | jq -r '.learningLanguage')
-              XP=$(echo "$course" | jq -r '.xp // 0')
-              CEFR=$(echo "$course" | jq -r '.cefr // ""')
-              PROGRESS=$(echo "$course" | jq -r '.progress // 0')
-
-              # эмодзи
-              case "$CODE" in
-                ja) FLAG="🇯🇵"; NAME="Japanese" ;;
-                zh) FLAG="🇨🇳"; NAME="Chinese" ;;
-                en) FLAG="🇺🇸"; NAME="English" ;;
-                es) FLAG="🇪🇸"; NAME="Spanish" ;;
-                fr) FLAG="🇫🇷"; NAME="French" ;;
-                de) FLAG="🇩🇪"; NAME="German" ;;
-                it) FLAG="🇮🇹"; NAME="Italian" ;;
-                ko) FLAG="🇰🇷"; NAME="Korean" ;;
-                *) FLAG="🌐"; NAME="$CODE" ;;
+              case "$LANG" in
+                ja) FLAG="🇯🇵"; NAME="Japanese"; MAX=10000 ;;
+                zh) FLAG="🇨🇳"; NAME="Chinese"; MAX=10000 ;;
+                en) FLAG="🇺🇸"; NAME="English"; MAX=10000 ;;
+                fr) FLAG="🇫🇷"; NAME="French"; MAX=5000 ;;
+                de) FLAG="🇩🇪"; NAME="German"; MAX=5000 ;;
+                ko) FLAG="🇰🇷"; NAME="Korean"; MAX=5000 ;;
+                ru) FLAG="🇷🇺"; NAME="Russian"; MAX=2000 ;;
+                id) FLAG="🇮🇩"; NAME="Indonesian"; MAX=2000 ;;
+                *) FLAG="🌐"; NAME="$LANG"; MAX=3000 ;;
               esac
 
-              # прогресс бар (0-10)
-              BAR_LEN=10
-              FILLED=$(awk "BEGIN {printf \"%d\", ($PROGRESS * $BAR_LEN)}")
-              EMPTY=$((BAR_LEN - FILLED))
+              # CEFR (очень грубая оценка)
+              if [ "$XP" -lt 500 ]; then CEFR="A1"
+              elif [ "$XP" -lt 1500 ]; then CEFR="A2"
+              elif [ "$XP" -lt 4000 ]; then CEFR="B1"
+              elif [ "$XP" -lt 8000 ]; then CEFR="B2"
+              else CEFR="C1"
+              fi
+
+              # progress %
+              PROG=$(awk "BEGIN {printf \"%.0f\", ($XP/$MAX)*100}")
+              [ "$PROG" -gt 100 ] && PROG=100
+
+              # bar 10 blocks
+              FILLED=$((PROG / 10))
+              EMPTY=$((10 - FILLED))
 
               BAR=$(printf "%0.s█" $(seq 1 $FILLED))
               BAR="${BAR}$(printf "%0.s░" $(seq 1 $EMPTY))"
 
-              echo "- $FLAG **$NAME**" >> $TMP
-              echo "  - XP: **$XP**" >> $TMP
-              echo "  - CEFR: **$CEFR**" >> $TMP
-              echo "  - Progress: $BAR ($PROGRESS%)" >> $TMP
+              echo "- $FLAG **$NAME**" >> $OUT
+              echo "  - XP: **$XP**" >> $OUT
+              echo "  - CEFR: **$CEFR**" >> $OUT
+              echo "  - Progress: $BAR ($PROG%)" >> $OUT
+              echo "" >> $OUT
 
-              if [ "$CODE" = "ja" ]; then
-                echo "  - 🔥 Streak: **$STREAK days**" >> $TMP
-              fi
-
-              echo "" >> $TMP
           done
 
-          echo "</details>" >> $TMP
+          echo "🔥 Current streak: **$STREAK days**" >> $OUT
+          echo "" >> $OUT
+          echo "</details>" >> $OUT
 
       - name: Inject into README
         run: |
