@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 jobs:
-  update:
+  update-Duo:
     runs-on: ubuntu-latest
 
     steps:
@@ -113,6 +113,9 @@ jobs:
           ' README.md > tmp.md
 
           mv tmp.md README.md
+
+      - name: Cleanup temp files
+        run: rm -f duo.md tmp.md
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
