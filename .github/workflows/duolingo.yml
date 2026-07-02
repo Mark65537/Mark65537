@@ -1,0 +1,109 @@
+name: Duolingo README Update
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # каждый день в 00:00 UTC
+  push:
+    branches:
+      - main
+      - github-actions
+
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Build Duolingo block
+        shell: bash
+        run: |
+          set -e
+
+          JSON=$(curl -s https://duojson.com/Marksics/profile.json)
+
+          STREAK=$(echo "$JSON" | jq -r '.streak // 0')
+
+          TMP="duo_block.md"
+
+          echo "<details open>" > $TMP
+          echo "<summary><h2>🌍 Иностранные языки</h2></summary>" >> $TMP
+          echo "" >> $TMP
+
+          echo "$JSON" \
+          | jq -c '.courses[]' \
+          | jq -s 'sort_by(-.xp)' \
+          | jq -c '.[]' \
+          | while read -r course; do
+
+              CODE=$(echo "$course" | jq -r '.learningLanguage')
+              XP=$(echo "$course" | jq -r '.xp // 0')
+              CEFR=$(echo "$course" | jq -r '.cefr // ""')
+              PROGRESS=$(echo "$course" | jq -r '.progress // 0')
+
+              # эмодзи
+              case "$CODE" in
+                ja) FLAG="🇯🇵"; NAME="Japanese" ;;
+                zh) FLAG="🇨🇳"; NAME="Chinese" ;;
+                en) FLAG="🇺🇸"; NAME="English" ;;
+                es) FLAG="🇪🇸"; NAME="Spanish" ;;
+                fr) FLAG="🇫🇷"; NAME="French" ;;
+                de) FLAG="🇩🇪"; NAME="German" ;;
+                it) FLAG="🇮🇹"; NAME="Italian" ;;
+                ko) FLAG="🇰🇷"; NAME="Korean" ;;
+                *) FLAG="🌐"; NAME="$CODE" ;;
+              esac
+
+              # прогресс бар (0-10)
+              BAR_LEN=10
+              FILLED=$(awk "BEGIN {printf \"%d\", ($PROGRESS * $BAR_LEN)}")
+              EMPTY=$((BAR_LEN - FILLED))
+
+              BAR=$(printf "%0.s█" $(seq 1 $FILLED))
+              BAR="${BAR}$(printf "%0.s░" $(seq 1 $EMPTY))"
+
+              echo "- $FLAG **$NAME**" >> $TMP
+              echo "  - XP: **$XP**" >> $TMP
+              echo "  - CEFR: **$CEFR**" >> $TMP
+              echo "  - Progress: $BAR ($PROGRESS%)" >> $TMP
+
+              if [ "$CODE" = "ja" ]; then
+                echo "  - 🔥 Streak: **$STREAK days**" >> $TMP
+              fi
+
+              echo "" >> $TMP
+          done
+
+          echo "</details>" >> $TMP
+
+      - name: Inject into README
+        run: |
+          awk '
+            BEGIN {p=1}
+            /<!-- DUOLINGO_START -->/ {
+              print;
+              system("cat duo_block.md");
+              p=0;
+              next;
+            }
+            /<!-- DUOLINGO_END -->/ {
+              p=1;
+            }
+            p
+          ' README.md > tmp.md
+
+          mv tmp.md README.md
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Update Duolingo stats"

@@ -113,6 +113,7 @@
 
 </details> <!-- 🧠 Технический стек и инструменты разработки -->
 
+<!-- DUOLINGO_START -->
 <details open>
 <summary><h2>🌍 Иностранные языки</h2></summary>
 
@@ -121,6 +122,7 @@
 - 🇺🇸 English — чтение технической документации, работа с API и документацией
 
 </details>
+<!-- DUOLINGO_END -->
 
 <details open>
 <summary><h2>Мои навыки</h2></summary>
