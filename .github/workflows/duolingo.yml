@@ -38,6 +38,9 @@ jobs:
           echo "<details open>" > $OUT
           echo "<summary><h2>🌍 Иностранные языки</h2></summary>" >> $OUT
           echo "" >> $OUT
+          echo "🔥 Current streak: **$STREAK days**" >> $OUT
+          echo "" >> $OUT
+          echo "Total XP: **$(echo "$JSON" | jq -r '.totalXp // 0')**" >> $OUT
 
           # ---- агрегируем XP по языку ----
           echo "$JSON" \
@@ -56,11 +59,9 @@ jobs:
               case "$LANG" in
                 ja) FLAG="🇯🇵"; NAME="Japanese"; MAX=10000 ;;
                 zh) FLAG="🇨🇳"; NAME="Chinese"; MAX=10000 ;;
-                en) FLAG="🇺🇸"; NAME="English"; MAX=10000 ;;
                 fr) FLAG="🇫🇷"; NAME="French"; MAX=5000 ;;
                 de) FLAG="🇩🇪"; NAME="German"; MAX=5000 ;;
                 ko) FLAG="🇰🇷"; NAME="Korean"; MAX=5000 ;;
-                ru) FLAG="🇷🇺"; NAME="Russian"; MAX=2000 ;;
                 id) FLAG="🇮🇩"; NAME="Indonesian"; MAX=2000 ;;
                 *) FLAG="🌐"; NAME="$LANG"; MAX=3000 ;;
               esac
@@ -91,8 +92,7 @@ jobs:
               echo "" >> $OUT
 
           done
-
-          echo "🔥 Current streak: **$STREAK days**" >> $OUT
+          
           echo "" >> $OUT
           echo "</details>" >> $OUT
 
