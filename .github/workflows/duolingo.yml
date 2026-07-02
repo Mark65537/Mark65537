@@ -57,12 +57,13 @@ jobs:
           ' | while read LANG XP; do
 
               case "$LANG" in
-                ja) FLAG="🇯🇵"; NAME="Japanese"; MAX=10000 ;;
-                zh) FLAG="🇨🇳"; NAME="Chinese"; MAX=10000 ;;
-                fr) FLAG="🇫🇷"; NAME="French"; MAX=5000 ;;
-                de) FLAG="🇩🇪"; NAME="German"; MAX=5000 ;;
-                ko) FLAG="🇰🇷"; NAME="Korean"; MAX=5000 ;;
-                id) FLAG="🇮🇩"; NAME="Indonesian"; MAX=2000 ;;
+                ja) FLAG="<img src="https://flagcdn.com/w40/jp.png" width="24"/>"; NAME="Japanese"; MAX=10000 ;;
+                zh) FLAG="<img src="https://flagcdn.com/w40/cn.png" width="24"/>"; NAME="Chinese"; MAX=10000 ;;
+                en) FLAG="<img src="https://flagcdn.com/w40/gb.png" width="24"/>"; NAME="English"; MAX=10000 ;;
+                fr) FLAG="<img src="https://flagcdn.com/w40/fr.png" width="24"/>"; NAME="French"; MAX=5000 ;;
+                de) FLAG="<img src="https://flagcdn.com/w40/de.png" width="24"/>"; NAME="German"; MAX=5000 ;;
+                ko) FLAG="<img src="https://flagcdn.com/w40/kr.png" width="24"/>"; NAME="Korean"; MAX=5000 ;;
+                id) FLAG="<img src="https://flagcdn.com/w40/id.png" width="24"/>"; NAME="Indonesian"; MAX=2000 ;;
                 *) FLAG="🌐"; NAME="$LANG"; MAX=3000 ;;
               esac
 
