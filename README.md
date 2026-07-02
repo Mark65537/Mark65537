@@ -111,6 +111,15 @@
 
 </details>
 
+</details> <!-- 🧠 Технический стек и инструменты разработки -->
+
+<details open>
+<summary><h2>🌍 Иностранные языки</h2></summary>
+
+- 🇯🇵 Japanese — изучаю ежедневно (Duolingo, 350+ day streak)
+- 🇨🇳 Chinese — базовый уровень, продолжаю изучение (Duolingo)
+- 🇺🇸 English — чтение технической документации, работа с API и документацией
+
 </details>
 
 <details open>
