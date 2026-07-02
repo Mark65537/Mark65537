@@ -102,7 +102,7 @@ jobs:
             BEGIN {p=1}
             /<!-- DUOLINGO_START -->/ {
               print;
-              system("cat duo_block.md");
+              system("cat duo.md");
               p=0;
               next;
             }
