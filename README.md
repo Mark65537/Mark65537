@@ -68,6 +68,7 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:bootstrap&type=repositories)
 [![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:docker&type=repositories)
 [![Docker Compose](https://img.shields.io/badge/Docker%20Compose-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:docker-compose&type=repositories)
+[![WebGPU](https://img.shields.io/badge/WebGPU-%231A1A2E.svg?style=for-the-badge&logo=webgpu&logoColor=%235B8CFF)](https://github.com/search?q=user%3AMark65537+topic%3Awebgpu&type=repositories)
 
 </details>
 
