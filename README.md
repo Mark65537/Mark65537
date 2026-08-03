@@ -84,7 +84,7 @@
 <details open>
 <summary><h3>☁️ Хостинг/SaaS</h3></summary>
 
-[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://docs.github.com/en/pages)
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/search?q=user:Mark65537+topic:github-pages&type=repositories)
 
 </details>
 
