@@ -116,9 +116,49 @@
 <details open>
 <summary><h2>🌍 Иностранные языки</h2></summary>
 
-- 🇯🇵 Japanese — изучаю ежедневно (Duolingo, 350+ day streak)
-- 🇨🇳 Chinese — базовый уровень, продолжаю изучение (Duolingo)
-- 🇺🇸 English — чтение технической документации, работа с API и документацией
+🔥 Current streak: **197 days**
+
+Total XP: **18706**
+
+- <img src=https://flagcdn.com/w40/jp.png width=24/> **Japanese**
+  - XP: **9723**
+  - CEFR: **C1**
+  - Progress: █████████░ (97%)
+
+- <img src=https://flagcdn.com/w40/cn.png width=24/> **Chinese**
+  - XP: **5333**
+  - CEFR: **B2**
+  - Progress: █████░░░░░ (53%)
+
+- <img src=https://flagcdn.com/w40/de.png width=24/> **German**
+  - XP: **2500**
+  - CEFR: **B1**
+  - Progress: █████░░░░░ (50%)
+
+- <img src=https://flagcdn.com/w40/fr.png width=24/> **French**
+  - XP: **626**
+  - CEFR: **A2**
+  - Progress: █░░░░░░░░░ (13%)
+
+- 🌐 **ru**
+  - XP: **200**
+  - CEFR: **A1**
+  - Progress: █░░░░░░░░░░ (7%)
+
+- <img src=https://flagcdn.com/w40/gb.png width=24/> **English**
+  - XP: **148**
+  - CEFR: **A1**
+  - Progress: █░░░░░░░░░░ (1%)
+
+- <img src=https://flagcdn.com/w40/kr.png width=24/> **Korean**
+  - XP: **126**
+  - CEFR: **A1**
+  - Progress: █░░░░░░░░░░ (3%)
+
+- <img src=https://flagcdn.com/w40/id.png width=24/> **Indonesian**
+  - XP: **50**
+  - CEFR: **A1**
+  - Progress: █░░░░░░░░░░ (2%)
 
 </details>
 
